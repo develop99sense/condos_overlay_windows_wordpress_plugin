@@ -1,0 +1,215 @@
+.cw-overlay-windows {
+  position: fixed;
+  background: #eee;
+  z-index: 999999;
+  border: 2px solid #333;
+}
+
+.cw-overlay-windows.cw-top {
+  top: 0;
+  height: 0;
+  border-top: 15px solid #333;
+}
+
+.cw-overlay-windows.cw-right {
+  right: 0;
+  top: 0;
+  border-right: 15px solid #333;
+}
+
+.cw-overlay-windows.cw-bottom {
+  bottom: 0;
+  height: 0;
+  border-top: 15px solid #333;
+}
+
+.cw-overlay-windows.cw-left {
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-right: 15px solid #333;
+}
+
+.cw-overlay-windows.cw-top.cw-dialog-size-tab,
+.cw-overlay-windows.cw-bottom.cw-dialog-size-tab {
+  width: 0;
+}
+
+.cw-overlay-windows.cw-left.cw-dialog-size-tab,
+.cw-overlay-windows.cw-right.cw-dialog-size-tab {
+  height: 0;
+}
+
+.cw-overlay-windows.cw-top.cw-dialog-size-50,
+.cw-overlay-windows.cw-bottom.cw-dialog-size-50 {
+  width: 50%;
+}
+
+.cw-overlay-windows.cw-left.cw-dialog-size-50,
+.cw-overlay-windows.cw-right.cw-dialog-size-50 {
+  height: 50%;
+}
+
+.cw-overlay-windows.cw-top.cw-dialog-size-75,
+.cw-overlay-windows.cw-bottom.cw-dialog-size-75 {
+  width: 75%;
+}
+
+.cw-overlay-windows.cw-left.cw-dialog-size-75,
+.cw-overlay-windows.cw-right.cw-dialog-size-75 {
+  height: 75%;
+}
+
+.cw-overlay-windows.cw-top.cw-dialog-size-100,
+.cw-overlay-windows.cw-bottom.cw-dialog-size-100 {
+  width: 100%;
+}
+
+.cw-overlay-windows.cw-left.cw-dialog-size-100,
+.cw-overlay-windows.cw-right.cw-dialog-size-100 {
+  height: 100%;
+}
+
+.cw-overlay-pins {
+  position: absolute;
+  font-size: 16px;
+  color: #FFF;
+  cursor: pointer;
+  border: 1px solid #333;
+  min-width: 150px;
+}
+
+.cw-overlay-windows.cw-top .cw-overlay-pins {
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  line-height: 1em;
+  border-top: 0;
+  border-radius: 0 0 15px 0;
+}
+
+.cw-overlay-windows.cw-right .cw-overlay-pins {
+  top: 0;
+  right: 0;
+  padding: 10px 20px;
+  line-height: 1em;
+  border-right: 0;
+  border-radius: 15px 0 0 0;
+  transform: rotate(270deg);
+  white-space: nowrap;
+  transform-origin: 123% 190%;
+}
+
+.cw-overlay-windows.cw-bottom .cw-overlay-pins {
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  line-height: 1em;
+  border-top: 0;
+  border-radius: 0 15px 0 0;
+  margin-top: -50px;
+}
+
+.cw-overlay-windows.cw-left .cw-overlay-pins {
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  line-height: 1em;
+  border-right: 0;
+  border-radius: 0 15px 0 0;
+  margin-left: 15px;
+  transform: rotate(90deg);
+  white-space: nowrap;
+  transform-origin: -24% 187%;
+}
+
+.cw-overlay-pins:hover, .cw-overlay-pins.active {
+  opacity: 0.7;
+}
+
+.cw-overlay-contents {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.cw-overlay-contents.active {
+  display: block !important;
+}
+
+.cw-overlay-divider-contents.divider-none {
+  height: 100%;
+  width: 100%;
+}
+
+.cw-overlay-windows.cw-left .cw-overlay-contents .cw-overlay-divider-contents.divider-1,
+.cw-overlay-windows.cw-right .cw-overlay-contents .cw-overlay-divider-contents.divider-1 {
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px solid #333;
+  display: inline-block;
+}
+
+.cw-overlay-windows.cw-top .cw-overlay-contents .cw-overlay-divider-contents.divider-1,
+.cw-overlay-windows.cw-bottom .cw-overlay-contents .cw-overlay-divider-contents.divider-1 {
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #333;
+  display: inline-block;
+}
+
+.cw-overlay-windows.cw-left .cw-overlay-contents .cw-overlay-divider-contents.divider-2,
+.cw-overlay-windows.cw-right .cw-overlay-contents .cw-overlay-divider-contents.divider-2 {
+  width: 100%;
+  height: 33.33%;
+  border-bottom: 1px solid #333;
+  display: inline-block;
+}
+
+.cw-overlay-windows.cw-top .cw-overlay-contents .cw-overlay-divider-contents.divider-2,
+.cw-overlay-windows.cw-bottom .cw-overlay-contents .cw-overlay-divider-contents.divider-2 {
+  width: 33.33%;
+  height: 100%;
+  border-right: 1px solid #333;
+  display: inline-block;
+}
+
+.cw-overlay-windows.cw-left .cw-overlay-contents .cw-overlay-divider-contents.divider-3,
+.cw-overlay-windows.cw-right .cw-overlay-contents .cw-overlay-divider-contents.divider-3 {
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid #333;
+}
+
+.cw-overlay-windows.cw-top .cw-overlay-contents .cw-overlay-divider-contents.divider-3,
+.cw-overlay-windows.cw-bottom .cw-overlay-contents .cw-overlay-divider-contents.divider-3 {
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid #333;
+  display: inline-block;
+}
+
+.cw-overlay-windows.individual-windows {
+
+}
+
+.individual-windows.cw-top, .individual-windows.cw-bottom {
+  display: flex;
+}
+
+.individual-windows.cw-top .cw-overlay-contents,
+.individual-windows.cw-bottom .cw-overlay-contents {
+  width: 152px;
+  background: #eee;
+  border: 1px solid #333;
+  display: block;
+}
+
+.individual-windows.cw-left .cw-overlay-contents,
+.individual-windows.cw-right .cw-overlay-contents {
+  height: 150px;
+  width: 0px;
+  background: #eee;
+  border: 1px solid #333;
+  display: block;
+}
